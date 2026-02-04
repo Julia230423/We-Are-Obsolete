@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Exhibition — We Are Both Obsolete</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="DOC Studio logo" />
+    </a>
+
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html#about">About</a>
+      <a href="exhibition.html">Exhibitions</a>
+      <a href="#info">Info</a>
+    </nav>
+
+    <a class="btn btn-secondary" href="contact.html">Contact us</a>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <h1 class="h1" style="font-size:56px">THE<br/>EXHIBITION</h1>
+    <div class="sub">An exhibition by DOC Studio</div>
+  </div>
+
+  <section class="band" id="info">
+    <div class="container" style="position:relative;">
+    
+
+      <div class="cols">
+        <p><strong>We are both obsolete</strong> reflects on the shared obsolescence of technology and the human condition in the digital age. Through newly developed works, it invites critical engagement with the psychological, social, and environmental costs of technological progress.</p>
+
+        <p>The works span modified interfaces, sculptural assemblage, and degraded digital aesthetics. Physical and digital materials become entangled: printed circuit boards sit alongside brushstrokes, while coded behaviours interrupt sculptural forms—blurring the boundary between technological debris and artistic gesture.</p>
+
+        <p>Please explore the systems that make both machines and people disposable: planned obsolescence, algorithmic burnout, fractured attention, and the quiet violence of constant upgrades. Visitors are invited to reflect on a culture where relevance is engineered to expire by design, not necessity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="icon-section" aria-label="Icon works">
+    <div class="container">
+      <div class="icon-grid" aria-label="Works grid">
+  
+        <button class="icon-card" type="button" data-artwork="recycle">
+          <img src="assets/icons/recycle-bin.png" alt="Recycle Bin icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="globe">
+          <img src="assets/icons/globe.png" alt="Globe icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="pc">
+          <img src="assets/icons/pc.png" alt="PC icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="cmd">
+          <img src="assets/icons/cmd.png" alt="Command line icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="redx">
+          <img src="assets/icons/red-x.png" alt="Red X icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="paint">
+          <img src="assets/icons/paint.png" alt="Paint icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="picture">
+          <img src="assets/icons/picture.png" alt="Picture icon" />
+        </button>
+  
+        <button class="icon-card" type="button" data-artwork="doc">
+          <img src="assets/icons/doc-eye.png" alt="Document & eye icon" />
+        </button>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  
+  
+  
+
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Artwork details">
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+
+    <div class="modal-head">
+      <img id="modalImg" src="" alt="" />
+      <div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+    </div>
+
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
